@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Progetti Scuola</title>
+<style>
+  :root { --bg:#fafafa; --fg:#1d1d1f; --muted:#666; --card:#fff; --border:#e2e2e2; --accent:#0b5cad; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141414; --fg:#eee; --muted:#aaa; --card:#1e1e1e; --border:#333; --accent:#6aa9ff; } }
+  body { margin:0; font-family:system-ui,sans-serif; background:var(--bg); color:var(--fg); line-height:1.5; }
+  main { max-width:900px; margin:0 auto; padding:32px 16px; }
+  h1 { margin:0 0 4px; } p.sub { color:var(--muted); margin:0 0 32px; }
+  h2 { border-bottom:1px solid var(--border); padding-bottom:4px; margin-top:32px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:16px; }
+  .card h3 { margin:0 0 6px; font-size:1.05rem; }
+  .card a { color:var(--accent); text-decoration:none; } .card a:hover { text-decoration:underline; }
+  .tag { display:inline-block; font-size:.75rem; border:1px solid var(--border); border-radius:4px; padding:1px 6px; margin-right:4px; color:var(--muted); }
+  footer { margin-top:48px; color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Progetti Scuola</h1>
+  <p class="sub">Progetti didattici di Sistemi e Reti — ISIS Keynes</p>
+
+  <!-- CLASSE: TEPI5 -->
+  <h2>TEPI5 · Sistemi e Reti</h2>
+  <div class="grid">
+    <!-- PROGETTO: TEPI5/sistemi-e-reti/01-tcp-scambio-messaggi -->
+    <div class="card">
+      <h3><a href="https://github.com/francescoscuola/ProgettiScuola/tree/main/TEPI5/sistemi-e-reti/01-tcp-scambio-messaggi">01 · TCP – scambio messaggi</a></h3>
+      <p>Client-server TCP minimale: il client invia messaggi, il server risponde.</p>
+      <span class="tag">C#</span><span class="tag">.NET 8</span><span class="tag">Socket</span>
+    </div>
+  </div>
+
+  <footer>Materiale ad uso didattico · <a href="https://github.com/francescoscuola/ProgettiScuola">Repository su GitHub</a></footer>
+</main>
+</body>
+</html>
