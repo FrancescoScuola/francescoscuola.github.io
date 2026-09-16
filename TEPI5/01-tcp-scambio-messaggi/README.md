@@ -1,6 +1,6 @@
 # 01 · TCP – scambio messaggi
 
-**Classe:** TEPI5 · **Materia:** Sistemi e Reti · **Tecnologie:** C#, .NET 8
+**Materia:** TEPI5 · **Tecnologie:** C#, .NET 8
 
 ## Obiettivo didattico
 
