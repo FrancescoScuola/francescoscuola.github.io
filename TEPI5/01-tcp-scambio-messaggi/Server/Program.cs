@@ -21,23 +21,33 @@ namespace Server
             {
                 // Bloccante: attende che un client si connetta
                 using (TcpClient client = listener.AcceptTcpClient())
-                using (NetworkStream stream = client.GetStream())
-                using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
-                using (StreamWriter writer = new StreamWriter(stream, Encoding.UTF8))
                 {
-                    writer.AutoFlush = true;
                     Console.WriteLine("Client connesso: " + client.Client.RemoteEndPoint);
 
-                    string messaggio;
-                    // ReadLine restituisce null quando il client chiude la connessione
-                    while ((messaggio = reader.ReadLine()) != null)
+                    using (NetworkStream stream = client.GetStream())
                     {
-                        Console.WriteLine("Ricevuto: " + messaggio);
-                        writer.WriteLine("ECO: " + messaggio);
+                        using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+                        {
+                            using (StreamWriter writer = new StreamWriter(stream, Encoding.UTF8))
+                            {
+                                writer.AutoFlush = true;
 
-                        if (messaggio.ToUpper() == "FINE")
-                            break;
+                                string messaggio;
+                                // ReadLine restituisce null quando il client chiude la connessione
+                                while ((messaggio = reader.ReadLine()) != null)
+                                {
+                                    Console.WriteLine("Ricevuto: " + messaggio);
+                                    writer.WriteLine("ECO: " + messaggio);
+
+                                    if (messaggio.ToUpper() == "FINE")
+                                    {
+                                        break;
+                                    }
+                                }
+                            }
+                        }
                     }
+
                     Console.WriteLine("Client disconnesso.");
                 }
             }

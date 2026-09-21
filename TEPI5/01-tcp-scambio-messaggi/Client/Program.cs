@@ -12,8 +12,15 @@ namespace Client
         {
             string host = "127.0.0.1";
             int porta = 5000;
-            if (args.Length > 0) host = args[0];
-            if (args.Length > 1) porta = int.Parse(args[1]);
+
+            if (args.Length > 0)
+            {
+                host = args[0];
+            }
+            if (args.Length > 1)
+            {
+                porta = int.Parse(args[1]);
+            }
 
             // Attendo che l'utente sia pronto: cosi' il server ha il tempo di avviarsi
             Console.WriteLine("Premi INVIO per connetterti a " + host + ":" + porta);
@@ -27,23 +34,31 @@ namespace Client
                     Console.WriteLine("Connesso. Scrivi un messaggio (FINE per uscire).");
 
                     using (NetworkStream stream = client.GetStream())
-                    using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
-                    using (StreamWriter writer = new StreamWriter(stream, Encoding.UTF8))
                     {
-                        writer.AutoFlush = true;
-
-                        while (true)
+                        using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
                         {
-                            Console.Write("> ");
-                            string testo = Console.ReadLine();
-                            if (testo == null)
-                                break;
+                            using (StreamWriter writer = new StreamWriter(stream, Encoding.UTF8))
+                            {
+                                writer.AutoFlush = true;
 
-                            writer.WriteLine(testo);
-                            Console.WriteLine(reader.ReadLine());
+                                while (true)
+                                {
+                                    Console.Write("> ");
+                                    string testo = Console.ReadLine();
+                                    if (testo == null)
+                                    {
+                                        break;
+                                    }
 
-                            if (testo.ToUpper() == "FINE")
-                                break;
+                                    writer.WriteLine(testo);
+                                    Console.WriteLine(reader.ReadLine());
+
+                                    if (testo.ToUpper() == "FINE")
+                                    {
+                                        break;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
