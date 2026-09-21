@@ -1,6 +1,6 @@
 # 01 · TCP – scambio messaggi
 
-**Materia:** TEPI5 · **Tecnologie:** C#, .NET 8
+**Materia:** TEPI5 · **Tecnologie:** C#, .NET Framework 4.8, Visual Studio
 
 ## Obiettivo didattico
 
@@ -12,22 +12,31 @@ invio e ricezione di dati tramite stream, chiusura della connessione.
 - Pila ISO/OSI e TCP/IP; concetto di porta e socket
 - Differenza tra TCP e UDP
 - Basi di C# (variabili, cicli, console)
-- .NET 8 SDK installato (`dotnet --version`)
+- Visual Studio con il carico di lavoro "Sviluppo desktop .NET" (.NET Framework 4.8)
+
+## Struttura
+
+```
+TcpScambioMessaggi.sln      ← aprire questo file in Visual Studio
+├── Server/                 ← progetto console (.NET Framework 4.8)
+│   └── Program.cs
+└── Client/                 ← progetto console (.NET Framework 4.8)
+    └── Program.cs
+```
 
 ## Come si esegue
 
-Aprire due terminali nella cartella del progetto.
+1. Aprire `TcpScambioMessaggi.sln` in Visual Studio.
+2. Tasto destro sulla soluzione → **Imposta progetti di avvio…** →
+   **Più progetti di avvio**: impostare *Server* e *Client* su **Avvio**
+   (Server in cima alla lista).
+3. Premere **F5**: si aprono due console.
+4. Nella console del client premere INVIO per connettersi, poi scrivere i
+   messaggi; il server risponde con `ECO: <messaggio>`. `FINE` chiude la sessione.
 
-```bash
-# Terminale 1
-dotnet run --project Server
-
-# Terminale 2 (host e porta opzionali, default 127.0.0.1 5000)
-dotnet run --project Client -- 127.0.0.1 5000
-```
-
-Scrivere messaggi nel client; il server risponde con `ECO: <messaggio>`.
-`FINE` chiude la sessione.
+In alternativa si possono avviare a mano gli eseguibili in `Server\bin\Debug\`
+e `Client\bin\Debug\`; al client si possono passare IP e porta del server:
+`Client.exe 192.168.1.10 5000`.
 
 ## Spiegazione per la lezione
 

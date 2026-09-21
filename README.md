@@ -15,7 +15,7 @@ Vetrina online: <https://francescoscuola.github.io/>
 
 | # | Materia | Progetto | Tecnologie | Descrizione |
 |---|---------|----------|------------|-------------|
-| 01 | TEPI5 | [TCP – scambio messaggi](TEPI5/01-tcp-scambio-messaggi/) | C#, .NET 8 | Client-server TCP minimale: il client invia messaggi, il server risponde. |
+| 01 | TEPI5 | [TCP – scambio messaggi](TEPI5/01-tcp-scambio-messaggi/) | C#, .NET Framework 4.8 | Client-server TCP minimale: il client invia messaggi, il server risponde. |
 
 ## Licenza
 
