@@ -17,6 +17,12 @@ Vetrina online: <https://francescoscuola.github.io/>
 |---|---------|----------|------------|-------------|
 | 01 | TEPI5 | [TCP – scambio messaggi](TEPI5/01-tcp-scambio-messaggi/) | C#, .NET Framework 4.8 | Client-server TCP minimale: il client invia messaggi, il server risponde. |
 
+## Corsi
+
+| Corso | Destinatari | Descrizione |
+|-------|-------------|-------------|
+| [Corso di Word](CorsoWord/) | Ragazzi di 13 anni | 5 esercizi progressivi in Word (formattazione, tabelle, immagini e forme, layout, stili): risultato in prima pagina e istruzioni passo per passo. Immagini scaricabili in [zip](CorsoWord/immagini.zip). |
+
 ## Licenza
 
 Vedi [LICENSE](LICENSE) — uso didattico.
