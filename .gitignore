@@ -9,3 +9,5 @@ obj/
 .idea/
 Thumbs.db
 .DS_Store
+# Output di lavoro di Claude (non pubblicare)
+Claude outputs/

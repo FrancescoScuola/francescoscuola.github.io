@@ -13,7 +13,7 @@ namespace Server
 
         static void Main(string[] args)
         {
-            TcpListener listener = new TcpListener(IPAddress.Any, PORTA);
+            TcpListener listener = new TcpListener(IPAddress.Loopback, PORTA);
             listener.Start();
             Console.WriteLine("Server in ascolto sulla porta " + PORTA + "...");
 
@@ -43,6 +43,7 @@ namespace Server
                                     {
                                         break;
                                     }
+
                                 }
                             }
                         }
