@@ -10,11 +10,11 @@ finale e una sfida facoltativa per chi finisce prima.
 
 | # | Esercizio | Cosa si impara | Immagini necessarie |
 |---|-----------|----------------|---------------------|
-| 1 | [Pancake per la colazione](Esercizio1_Ricetta_Formattazione.docx) | Carattere, grassetto/corsivo/sottolineato, evidenziatore, allineamenti, elenchi puntati e numerati, interlinea | — |
-| 2 | [Il mio orario scolastico](Esercizio2_Orario_Tabelle.docx) | Pagina orizzontale, tabelle, unire celle, sfondi, bordi, allineamento nelle celle | — |
+| 1 | [Pancake per la colazione](Esercizio1_Ricetta_Formattazione.docx) ([PDF](Esercizio1_Ricetta_Formattazione.pdf)) | Carattere, grassetto/corsivo/sottolineato, evidenziatore, allineamenti, elenchi puntati e numerati, interlinea | — |
+| 2 | [Il mio orario scolastico](Esercizio2_Orario_Tabelle.docx) ([PDF](Esercizio2_Orario_Tabelle.pdf)) | Pagina orizzontale, tabelle, unire celle, sfondi, bordi, allineamento nelle celle | — |
 | 3 | [Volantino del torneo di calcetto](Esercizio3_Volantino_ImmaginiForme.docx) ([PDF](Esercizio3_Volantino_ImmaginiForme.pdf)) | Bordo pagina, WordArt, immagine con testo a capo, forme e fumetti | [pallone.png](immagini/pallone.png) |
-| 4 | [Il giornalino di classe](Esercizio4_Giornalino_Layout.docx) | Intestazione e piè di pagina, numero di pagina, colonne, interruzioni di sezione e di colonna, capolettera, bordi e sfondo di paragrafo | [parco.png](immagini/parco.png), [robot.png](immagini/robot.png) |
-| 5 | [Ricerca sul Sistema Solare](Esercizio5_Ricerca_Stili.docx) | Stili Titolo 1/Titolo 2 e loro modifica, didascalie, note a piè di pagina, stili tabella, riquadro di spostamento, sommario (sfida) | [sistema_solare.png](immagini/sistema_solare.png) |
+| 4 | [Il giornalino di classe](Esercizio4_Giornalino_Layout.docx) ([PDF](Esercizio4_Giornalino_Layout.pdf)) | Intestazione e piè di pagina, numero di pagina, colonne, interruzioni di sezione e di colonna, capolettera, bordi e sfondo di paragrafo | [parco.png](immagini/parco.png), [robot.png](immagini/robot.png) |
+| 5 | [Ricerca sul Sistema Solare](Esercizio5_Ricerca_Stili.docx) ([PDF](Esercizio5_Ricerca_Stili.pdf)) | Stili Titolo 1/Titolo 2 e loro modifica, didascalie, note a piè di pagina, stili tabella, riquadro di spostamento, sommario (sfida) | [sistema_solare.png](immagini/sistema_solare.png) |
 
 ## Immagini
 
